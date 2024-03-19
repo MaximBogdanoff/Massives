@@ -62,6 +62,47 @@ public class Main {
             }
             System.out.print(weight[i] + ", ");
         }
-    }
+        System.out.println();
+
+        int[] salary = {30000, 25000, 100000, 60000, 50000};
+        int sum = 0;
+        for (int i = 0; i < salary.length; i++) {
+            sum += salary[i];
+        }
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+
+        int[] expenses = {120000, 20000, 30000, 40000, 50000};
+        int maxExpenses = 0;
+        for (final int current : expenses) {
+            if (current > maxExpenses) {
+                maxExpenses = current;
+            }
+        }
+        System.out.println(maxExpenses);
+        int minExpenses = maxExpenses;
+        for (final int current : expenses) {
+            if (current < minExpenses) {
+                minExpenses = current;
+            }
+        }
+        System.out.println(minExpenses);
+
+        double[] equal = {135000, 20000, 500000, 40000, 30000};
+        double average = 0;
+        for (double element : equal) {
+            average += element;
+        }
+        average = average / (equal.length);
+        System.out.println(average);
+
+    char[] reverseFullName =  {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--)
+
+    {
+        System.out.print(reverseFullName[i]);
+    }}
+
+
+
 }
 
